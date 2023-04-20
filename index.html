@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hooman Khalili</title>
+  <meta content="Hooman khalili" name="description">
+  <meta content="Hooman khalili" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+   <style type="text/css">
+
+/*cards css*/
+.page-content {
+  display: grid;
+  grid-gap:0.5rem;
+  padding: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 400px;
+    width: 250px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: contain;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: url(img/Muralc1.png);
+}
+.card:nth-child(2):before {
+  background-image: url(img/Muralc2.png);
+}
+.card:nth-child(3):before {
+  background-image: url(img/Muralc3.png);
+}
+.card:nth-child(4):before {
+  background-image: url(img/Muralc4.png);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.80rem;
+  font-weight: bolder;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: #0d0d0d;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+</style>
+
+ 
+</head>
+
+<body style="font-family:poppins;">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top" style="background-color:white;" >
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+       <h6 class="logo me-auto me-lg-0">
+     <a href="index.html"><img src="img/logo3.jpeg" style="width:12rem;height:60px";></a></h6>
+      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+           <li><a href="index.html" style="color:black;">Home</a></li>
+          <li><a href="mural.html" style="color:black;">Mural</a></li>
+          <li><a href="about.html" style="color:black;">Insights</a></li>
+          <li><a href="LatestNews.html" style="color:black;">Latest News</a></li>
+          <li><a href="contact.html" style="color:black;">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+         <a href="https://www.linkedin.com/in/hoomankhalili/" class="linkedin" target="_blank"><i class="bi bi-linkedin" style="font-size:20px; color:#0077b5;"></i></a>
+        <a href="https://www.facebook.com/hoomankhalili/" class="facebook"target="_blank"><i class="bi bi-facebook" style="font-size:20px; color:#3b5998"></i></a>
+        <a href="https://www.instagram.com/hoomantv/" class="instagram"target="_blank"><i class="bi bi-instagram" style="font-size:20px; color: #E4405F;"></i></a>
+        <a href="https://www.imdb.com/name/nm2557442/" class="imdb"target="_blank"><i class="fa fa-imdb" style="font-size:20px; color:black;"></i></a>
+        <a href="https://www.youtube.com/@hoomantv/" class="youtube"target="_blank"><i class="fa fa-youtube" style="font-size:20px; color:red;"></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+<hr style="color:#1c1d88;">
+
+<!-- video start -->
+<!-- <div class="container-fluid mt-5">
+  <div class="row mt-5">
+    <div class="col-lg-12 col-sm-12">
+       <video autoplay muted loop style="width:100%; height:100%; margin-top:1rem;">
+          <source src="img/Hooman khalili heading (2000800).mp4" type="video/mp4"/ >
+        </video>
+    </div>
+  </div>
+</div> -->
+<!-- video end -->
+
+
+
+
+
+
+
+
+
+<!-- video start -->
+<div class="container-fluid mt-5">
+  <div class="row mt-5">
+    
+
+
+<!--Bootstrap Full-Width Responsive Slider/Carousel + bcSwipe + Caption + owlcarousel style pagination. Enjoy :) -->
+
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators ">
+    <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+    <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item mt-3">
+      <img src="img/home5.png" width="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1><!--caption heading goes here-->
+          <p></p><!--caption description goes here-->
+          <p><a class="btn btn-lg btn-primary" href="#" role="button"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item mt-3">
+      <img src="img/home3.gif" width="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+          <p></p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item active mt-4">
+      <img src="img/home1.png" width="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+          <p></p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div></div>
+
+<style type="text/css">
+  .carousel-caption {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  display: none; /*comment out to display captions*/
+}
+
+.carousel-control {
+  text-shadow: 0;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  top: 45%;
+  font-size: 20px;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  top: 45%;
+  font-size: 20px;
+}
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.0001) 100%
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 00001))
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 100%
+  ) !important;
+}
+
+.carousel-control.right {
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.0001) 100%
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 00001))
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 100%
+  ) !important;
+}
+
+.carousel-indicators {
+  bottom: -40px !important;
+}
+
+.carousel-indicators li {
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 10px !important;
+  background-color: #d9d9d9 !important;
+  width: 11px !important;
+  height: 11px !important;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+.carousel-indicators .active {
+  border: 0px solid #869791 !important;
+  border-radius: 10px !important;
+  background-color: #869791 !important;
+  width: 11px !important;
+  height: 11px !important;
+  margin-bottom: 1px !important;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+  (function(b) {
+  b.fn.bcSwipe = function(c) {
+    var f = { threshold: 50 };
+    c && b.extend(f, c);
+    this.each(function() {
+      function c(a) {
+        1 == a.touches.length &&
+          ((d = a.touches[0].pageX),
+          (e = !0),
+          this.addEventListener("touchmove", g, !1));
+      }
+      function g(a) {
+        e &&
+          ((a = d - a.touches[0].pageX),
+          Math.abs(a) >= f.threshold &&
+            (h(), 0 < a ? b(this).carousel("next") : b(this).carousel("prev")));
+      }
+      function h() {
+        this.removeEventListener("touchmove", g);
+        d = null;
+        e = !1;
+      }
+      var e = !1,
+        d;
+      "ontouchstart" in document.documentElement &&
+        this.addEventListener("touchstart", c, !1);
+    });
+    return this;
+  };
+})(jQuery);
+
+$(document).ready(function() {
+  $(".carousel").bcSwipe({ threshold: 50 });
+});
+
+</script>
+
+
+
+
+
+
+
+
+      <!--  <video autoplay muted loop style="width:100%; height:100%; margin-top:1rem;">
+          <source src="img/Hooman khalili heading (2000800).mp4" type="video/mp4"/ >
+        </video> -->
+    </div>
+  </div>
+</div>
+<!-- video end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- cards start -->
+<section>
+<main class="page-content mt-5 mb-5">
+  <div class="card mt-3">
+    <div class="content">
+      <h2 class="title" style="font-size:20px">January 14, 2023</h2>
+      <p class="copy" style="font-size:16px">American Christian lead the way by presenting murals supporting freedom-fighting Iranians</p>
+      <button class="btn"style="background-color:white;color:#1c1d88;"><a href="articale1.html" ><b style="color:#1c1d88;font-size:16px;">Read More</b></a></button>
+    </div>
+  </div>
+  <div class="card mt-3">
+    <div class="content">
+      <h2 class="title" style="font-size:20px">January 14, 2023</h2>
+      <p class="copy" style="font-size:16px">Women Empowerment : Stop Sympathising and Start Supporting</p>
+       <button class="btn"style="background-color:white;color:#1c1d88;"><a href="articale2.html" ><b style="color:#1c1d88;font-size:16px;">Read More</b></a></button>
+    </div>
+  </div>
+  <div class="card mt-3">
+    <div class="content">
+      <h2 class="title" style="font-size:20px">January 14, 2023</h2>
+      <p class="copy" style="font-size:16px">The Milestone of Multi-Tasking Personality: Hooman Khalili</p>
+       <button class="btn"style="background-color:white;color:#1c1d88;"><a href="articale3.html" ><b style="color:#1c1d88;font-size:16px;">Read More</b></a></button>
+    </div>
+  </div>
+  <div class="card mt-3">
+    <div class="content">
+      <h2 class="title" style="font-size:20px">January 14, 2023</h2>
+      <p class="copy" style="font-size:16px">Thor in the infinte warfare</p>
+       <button class="btn"style="background-color:white;color:#1c1d88;"><a href="articale4.html" ><b style="color:#1c1d88;font-size:16px;">Read More</b></a></button>
+    </div>
+  </div>
+</main>
+</section>
+
+<!-- cards end -->
+
+
+<!-- porm start -->
+<section style="background:linear-gradient(130deg,#1c1d88,white,white,white,white,white,white,white,white,white,white,#1c1d88);">
+ <div class="container-fluid p-5">
+    <div class="row text-center">
+      <div class="col-lg-2 col-md-2 mt-3 mb-2"></div>
+    <div class="col-lg-8 col-sm-8 mt-5 mb-5" style="color:black;font-weight: bold;font-size: 23px;line-height: 1.6; ">He stands with "women, side by side,<br>
+Fighting for justice, with pride.<br>
+A man who understands their plight,<br>
+Giving them strength to shine bright.<br><br>
+
+He's a social worker, a champion of change,<br>
+Empowering women, breaking free from the chains.<br>
+He's a beacon of hope in a world of hate,<br>
+A true ally, never too late."
+</div>
+<div class="col-lg-2 col-md-2"></div>
+</div>
+</div></section>
+<!-- poem end -->
+
+
+
+<!-- mural section start -->
+<section style="background-color:#ADD8E6;">
+  <div class="container-fluid">
+    <img src="img/murall.png" class="w-100 h-100">
+  </div>
+
+
+
+<!-- youtube 2 v -->
+<!-- <div class="container mt-5 bg-light">
+  <div class="row">
+    
+    <div class="col-lg-6">
+      <iframe width="100" height="100"
+       src="https://youtube.com/embed/hOBBgclOlnc">
+    </iframe>
+    </div>
+    <div class="col-lg-6">
+      <iframe width="100" height="100"
+     src="https://youtube.com/embed/3DhKxIzHyhk">
+     </iframe>
+    </div>
+  </div>
+</div>
+ -->
+
+
+<div class="container-fluid mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 mt-5">
+    <iframe src="https://youtube.com/embed/hOBBgclOlnc"  class="w-100" style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" >
+    </iframe>
+    </div>
+    <div class="col-md-4 col-sm-4 mt-5">
+      <video src="img/Mural wall Reel..mp4" type="video/mp4" controls muted style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" class="w-100">
+     </video >
+  
+    </div>
+    <div class="col-md-4 col-sm-4 mt-5" >
+      <video src="img/Mural News Reel.mp4" type="video/mp4" controls muted style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" class="w-100">
+     </video >
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- hero start -->
+<style>
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("img/bio12.jpg");
+  height: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+   font-family:"Poppins";
+  font-size: 20px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-100%, -40%);
+  color: white;
+
+}
+
+</style>
+
+
+<div class="container-fluid mt-5">
+  <div class="row">
+<div class="hero-image">
+  <div class="col-xs-12 col-sm-10 col-md-7 col-lg-8" >
+    <div>
+    <p style="color:white; text-align: justify;" class="mt-2"><br>Hooman Khalili was a morning show radio personality in the San Francisco Bay Area
+on Alice Radio 97.3 FM (CBS Radio). He has been part of the Sarah and Vinnie morning
+show, for the past 21 years. Hooman’s job at the station encompasses, phone
+screening, movie reviews, and celebrity interviewer for the show. He has interviewed
+countless celebrities including Dwayne The Rock Johnson, Donald Trump, Tom Hanks,
+Robert Downey, Jr. Harrison Ford, Jerry Seinfeld, George Lucas, Maroon 5, 50 Cent, and Hooman was the last person to interview Hunter S. Thompson before he died.
+Hooman’s Red carpet interviews include, The Grammies, MTV Video Music Awards,
+the CBS Fall Television Lineup from 2003 – 2010, the Sundance Film Festival, and
+Superbowl 50. Hooman has collaborated with all the major movie studios on the promotion of over 1000 movies in 20 years.<br><br>
+In 2006, Hooman’s voice entertained a new segment of the population as he
+participated in the Pixar animated movie “Cars”, In 2008 Hooman created the #1 most view nonpartisan video to get the youth of America to vote in the presidential election. The video received 5.1 million views on YOUTUBE and ended up in the museum of Radio and Television in NYC. In 2011, Hooman shot OLIVE the 1st full length feature film shot entirely on a cell
+phone. OLIVE qualified for the academy awards in 2011.<br><br>
+
+The movie stars 2 time academy nominated Oscar Gena Rowlands with 5 original song
+written and performed by Dolly Parton. Hooman has spoken at and presented at the Sundance film festival, SXSW, Napa Valley, Sonoma, LA Film Fest, Disposable Film Fest in Washington DC, Macworld, Mill Valley Film Fest, SF Film Fest, and most rescently September of 2022 at the Ethiopia Film Festival.
+
+
+Hooman has done missions work all over the world, In South Africa with Bruce Wilkinson’s team, and independently in Costa Rica, Armenia, Bali, Honk Kong, South Korea, Mexico, Germany, Greece, Uganda and South Sudan
+Hoomans main mission field over the past 20 years has been San Francisco where he
+serves the homeless.<br><br>
+
+Hooman was also the choir director of St. Nicholas Antiochian Orthodox Church in San Francisco under Father Gregory Ofiesh Hooman serves terminally ill children suffering with cancer by creating movies with them in their hospital rooms with the mission of spreading joy and igniting their imaginations.</p>
+</div>
+</div></div></div></div>
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light  wow fadeInUp " data-wow-delay="0.3s" style="background-color: 
+#1f2e4a; font-family:poppins">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                         <a class="text-light mb-2" href="mural.html"><i class="bi bi-arrow-right text-primary me-2"></i>Mural</a>
+                        <a class="text-light mb-2" href="LatestNews.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest News</a>
+                        <a class="text-light mb-2" href="about.html"id="seo1"><i class="bi bi-arrow-right text-primary me-2"></i>Insights</a>
+                        <a class="text-light" href="contact.html"id="seo1"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Blogs</a>
+                        <a class="text-light mb-2" href="certification.html"><i class="bi bi-arrow-right text-primary me-2"></i>certification</a>
+                        <a class="text-light mb-2" href="faq.html"><i class="bi bi-arrow-right text-primary me-2"></i>FAQ's</a>
+                        <a class="text-light mb-2" href="casestudy.html"><i class="bi bi-arrow-right text-primary me-2"></i>Testimonials</a>
+                        <a class="text-light" href="carrier.html"><i class="bi bi-arrow-right text-primary me-2"></i>Carrier</a>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Reach To Us </h3>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="contact.html"  target="_blank"style="background-color:white;color:#1c1d88;font-weight: bold;font-size:16px;"><b >Contact</b></a></div>
+              
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4 ">Get In Touch</h3>
+                    <div class="">
+        <a href="https://www.linkedin.com/in/hoomankhalili/" class="linkedin"target="_blank" ><i class="bi bi-linkedin" style="font-size:25px; color:#0077b5;"></i></a>
+        <a href="https://www.facebook.com/hoomankhalili/" class="facebook"target="_blank"><i class="bi bi-facebook" style="font-size:25px; color:#3b5998"></i></a>
+        <a href="https://www.instagram.com/hoomantv/" class="instagram"target="_blank"><i class="bi bi-instagram" style="font-size:25px; color: #E4405F;"></i></a>
+        <a href="https://www.imdb.com/name/nm2557442/" class="imdb"target="_blank"><i class="fa fa-imdb" style="font-size:25px; color:black;"></i></a>
+        <a href="https://www.youtube.com/@hoomantv/" class="youtube"target="_blank"><i class="fa fa-youtube" style="font-size:25px; color:red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+                 <div class="row "  style="background-color:#1f2e4a;  font-family:poppins">
+                <div class="col-md-12 text-center text-light">
+                    <p class="mt-5">&copy; <a class="text-white border-bottom" href="#"></a>2023 <a href="index.html" style="color:white;">hoomankhalili.com </a><span> | All Rights Reserved</span></p>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <!-- Footer End -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

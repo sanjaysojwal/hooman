@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hooman Khalili</title>
+  <meta content="Hooman khalili" name="description">
+  <meta content="Hooman khalili" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<style type="text/css">
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*body {
+  padding: 2rem;
+}
+*/ul {
+  padding: 1rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/*li {
+  background-color: #ffdfd9;
+  color: #000;
+  padding: 0.51rem;
+}*/
+.container2 {
+  margin-top:5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 290px));
+  grid-gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  box-shadow: 0 1px 1px #000;
+}
+.img1 {
+  background-position: top;
+  background-size: cover;
+  height: 200px;
+  width: 290px;
+  box-shadow: 0 2px 10px #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.img1:hover {
+  box-shadow: none;
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+</style>
+</head>
+
+<body>
+
+ <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top" style="background-color:white;" >
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+       <h6 class="logo me-auto me-lg-0">
+     <a href="index.html"><img src="img/logo3.jpeg" style="width:10rem;height:60px";></a></h6>
+      
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+           <li><a href="index.html" style="color:black;">Home</a></li>
+          <li><a href="mural.html" style="color:black;">Mural</a></li>
+          <li><a href="about.html" style="color:black;">Insights</a></li>
+          <li><a href="LatestNews.html" style="color:black;">Latest News</a></li>
+          <li><a href="contact.html" style="color:black;">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+         <a href="https://www.linkedin.com/in/hoomankhalili/" class="linkedin" target="_blank"><i class="bi bi-linkedin" style="font-size:20px; color:#0077b5;"></i></a>
+        <a href="https://www.facebook.com/hoomankhalili/" class="facebook"target="_blank"><i class="bi bi-facebook" style="font-size:20px; color:#3b5998"></i></a>
+        <a href="https://www.instagram.com/hoomantv/" class="instagram"target="_blank"><i class="bi bi-instagram" style="font-size:20px; color: #E4405F;"></i></a>
+        <a href="https://www.imdb.com/name/nm2557442/" class="imdb"target="_blank"><i class="fa fa-imdb" style="font-size:20px; color:black;"></i></a>
+        <a href="https://www.youtube.com/@hoomantv/" class="youtube"target="_blank"><i class="fa fa-youtube" style="font-size:20px; color:red;"></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+<hr style="color:#1c1d88;">
+
+
+
+
+<!-- new pic start -->
+<section>
+         <div class="container-fluid mt-5">
+         <div class="row mt-5"> 
+        <div class="col-lg-12 text-center mt-5">
+                <h2 style="color:#1c1d88;font-size: 50px;font-weight: bold;">Photos</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+       
+<section class="mt-5 mb-2">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12"><h2 style="color:#1c1d88;font-size: 30px;font-weight: bold;">Mural 1 &nbsp &nbsp &nbsp<a href="https://goo.gl/maps/FQ3y6c12NZvcmMo26" style="color:#1c1d88;font-size: 30px;font-weight: bold;"><b><i class="fa fa-map-marker"></i></b></a></h2></div>
+</div>
+</div>
+</section>
+
+
+<div class="container mb-5">
+  <div class="row text-center">
+    <div class="col-md-4 mt-4"><img src="img/murala1.png"  style="height:300px;border-radius:10px; filter: drop-shadow(2px 5px 2px #222);" alt="mural1"></div>
+    <div class="col-md-4 mt-4"><img src="img/murala12.png" style="height:300px;border-radius:10px; filter: drop-shadow(2px 5px 2px #222);" alt="mural1"></div>
+
+    <div class="col-md-4 mt-4"><img src="img/murala13.png" style="height:300px;border-radius:10px; filter: drop-shadow(2px 5px 2px #222);" alt="mural1"></div>
+
+    <div class="col-md-4 mt-5"><img src="img/murala14.png" style="height:300px;border-radius:10px; filter: drop-shadow(2px 5px 2px #222);" alt="mural1"></div>
+
+  </div>
+</div>
+<br>
+
+<section class="mt-5 mb-2">
+ <div class="container mt-5">
+  <div class="row">
+   <div class="col-md-12"><h2 style="color:#1c1d88;font-size: 30px;font-weight: bold;">Mural 2 &nbsp &nbsp &nbsp<a href="https://goo.gl/maps/mGeNjZozDUtrGTzDA" style="color:#1c1d88;font-size: 30px;font-weight: bold;" class="mb-5"><b><i class="fa fa-map-marker"></i></b></a></h2></div>
+</div>
+</div>
+</section>
+
+<section class="mt-0 mb-5">
+ <div class="container">
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                        <img src="img/mural23.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 10px 5px #222);">
+                            
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural24.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                   <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural26.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                    
+                   
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural25.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural22.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural27.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural28.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural29.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural31.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural32.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural48.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural34.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural35.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural36.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural37.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural38.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural39.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural40.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural41.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural42.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural43.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural44.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural45.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural46.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                      <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="img/mural47.png" alt="mural2" class="card-img-top arti" style="border-radius:20px; filter: drop-shadow(5px 5px 5px #222);">
+                           
+                        </div>
+                        
+                    </div>
+                  
+            </div>
+        </div>
+        
+    </div>
+  </section>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        /** {
+            font-family: 'Poppins', sans-serif;
+        }
+*/
+        .arti {
+            height: 300px;
+        }
+        .owl-nav button{
+          height: 50px;
+          width: 50px;
+          background-color:white !important;
+          font-size: 30px !important;
+          text-align: center !important;
+
+        }
+
+        .owl-nav button:hover{
+          height: 50px;
+          width: 50px;
+          background-color:navy !important;
+          color: black;
+          font-size: 30px !important;
+          text-align: center !important;
+        }
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</div></div></div></div></div></section></section>
+
+
+
+
+
+
+       
+<section class="mt-5 mb-2">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12"><h2 style="color:#1c1d88;font-size: 30px;font-weight: bold;">Mural 3 &nbsp &nbsp &nbsp<a href="https://goo.gl/maps/bHTa5rkifN3CfMaBA" style="color:#1c1d88;font-size: 30px;font-weight: bold;"><b><i class="fa fa-map-marker"></i></b></a></h2></div>
+</div>
+</div>
+</section>
+
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-4 mt-3"><img src="img/Hooman khalili 300300 (1).png" style="border-radius:20px; filter: drop-shadow(5px 10px 5px #222);"></div>
+    <div class="col-md-4 mt-3"><img src="img/Hooman khalili 300300 (2).png" style="border-radius:20px; filter: drop-shadow(5px 10px 5px #222);"></div>
+
+    <div class="col-md-4 mt-3"><img src="img/Hooman khalili 300300.png" style="border-radius:20px; filter: drop-shadow(5px 10px 5px #222);"></div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- videos -->
+
+<section>
+<div class="container-fluid mt-5">
+  <div class="row text-center mt-5">
+    <div class="col-lg-12 col-sm-12 ">
+     <h2 style="color:#1c1d88;font-size:50px;font-weight: bold;">Videos</h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid  mb-5">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 mt-5">
+    <iframe src="https://youtube.com/embed/hOBBgclOlnc"  class="w-100" style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" >
+    </iframe>
+
+    </div>
+    <div class="col-md-4 col-sm-4 mt-5" >
+     <video src="img/Mural wall Reel..mp4" type="video/mp4" controls muted style="height:300px;border-radius:20px; filter: drop-shadow(5px 20px 5px #222);" class="w-100">
+</video >
+    </div>
+
+    <div class="col-md-4 col-sm-4 mt-5" >
+      <video src="img/Mural News Reel.mp4" type="video/mp4" controls muted style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" class="w-100">
+</video >
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div class="container-fluid mt-5 mb-5">
+  <div class="row">
+   
+    <div class="col-md-4 col-sm-4 mt-5">
+     <iframe src="img/Hooman khalili mural video (400300).mp4"  class="w-100" style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);"  >
+    </iframe>
+    </div>
+    <div class="col-md-4 col-sm-4 mt-5" >
+     <iframe src="img/Hooman khalili mural video 2  (400300).mp4" class="w-100" style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);"  >
+    </iframe>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="container-fluid mt-5 mb-5">
+  <div class="row">
+   
+    <div class="col-md-4 col-sm-4 mt-5">
+     <video src="img/Hooman khalili mural video (400300).mp4" type="video/mp4" controls muted style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" class="w-100" >
+</video >
+    </div>
+    <div class="col-md-4 col-sm-4 mt-5" >
+    <video src="img/Hooman khalili mural video 2  (400300).mp4" type="video/mp4" controls muted style="height:300px;border-radius:20px; filter: drop-shadow(5px 10px 5px #222);" class="w-100" >
+</video >
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light  wow fadeInUp " data-wow-delay="0.3s" style="background-color: 
+#1f2e4a; font-family:poppins">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                         <a class="text-light mb-2" href="mural.html"><i class="bi bi-arrow-right text-primary me-2"></i>Mural</a>
+                        <a class="text-light mb-2" href="LatestNews.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest News</a>
+                        <a class="text-light mb-2" href="about.html"id="seo1"><i class="bi bi-arrow-right text-primary me-2"></i>Insights</a>
+                        <a class="text-light" href="contact.html"id="seo1"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Blogs</a>
+                        <a class="text-light mb-2" href="certification.html"><i class="bi bi-arrow-right text-primary me-2"></i>certification</a>
+                        <a class="text-light mb-2" href="faq.html"><i class="bi bi-arrow-right text-primary me-2"></i>FAQ's</a>
+                        <a class="text-light mb-2" href="casestudy.html"><i class="bi bi-arrow-right text-primary me-2"></i>Testimonials</a>
+                        <a class="text-light" href="carrier.html"><i class="bi bi-arrow-right text-primary me-2"></i>Carrier</a>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Reach To Us </h3>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="contact.html"  target="_blank"style="background-color:white;color:#1c1d88;font-weight: bold;"><b >Contact</b></a></div>
+              
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4 ">Get In Touch</h3>
+                    <div class="">
+        <a href="https://www.linkedin.com/in/hoomankhalili/" class="linkedin"target="_blank" ><i class="bi bi-linkedin" style="font-size:25px; color:#0077b5;"></i></a>
+        <a href="https://www.facebook.com/hoomankhalili/" class="facebook"target="_blank"><i class="bi bi-facebook" style="font-size:25px; color:#3b5998"></i></a>
+        <a href="https://www.instagram.com/hoomantv/" class="instagram"target="_blank"><i class="bi bi-instagram" style="font-size:25px; color: #E4405F;"></i></a>
+        <a href="https://www.imdb.com/name/nm2557442/" class="imdb"target="_blank"><i class="fa fa-imdb" style="font-size:25px; color:black;"></i></a>
+        <a href="https://www.youtube.com/@hoomantv/" class="youtube"target="_blank"><i class="fa fa-youtube" style="font-size:25px; color:red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+                 <div class="row "  style="background-color:#1f2e4a;  font-family:poppins">
+                <div class="col-md-12 text-center text-light">
+                    <p class="mt-5">&copy; <a class="text-white border-bottom" href="#"></a>2023 <a href="index.html" style="color:white;">hoomankhalili.com </a><span> | All Rights Reserved</span></p>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <!-- Footer End -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+      let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+
+  </script>
+
+
+
+</body>
+
+</html>
+
+
+
+
